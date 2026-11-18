@@ -1,0 +1,3 @@
+- [x] Trocar a imagem grande por um carrossel com as ferramentas inclusas.
+- [x] Adicionar planos mensal, trimestral, semestral e anual usando o mesmo checkout.
+- [x] Validar a página em smartphone e corrigir qualquer problema visual.
