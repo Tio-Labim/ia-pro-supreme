@@ -33,6 +33,7 @@ import {
   SiEnvato,
   SiGooglegemini,
   SiMinimax,
+SiWhatsapp,
 } from "react-icons/si";
 
 import logoUrl from "@/assets/ia-pro-supreme-logo.png";
@@ -323,7 +324,7 @@ function Index() {
           <div className="relative min-w-0 overflow-hidden rounded-2xl border border-gold/25 bg-card/70 py-6 text-center shadow-[0_0_70px_-35px_var(--color-gold)]">
             <div className="mb-5 flex flex-col items-center gap-1 px-5">
               <p className="text-xs font-bold uppercase text-gold">Tudo incluso</p>
-              <span className="text-xs text-muted-foreground">11+ ferramentas</span>
+              <span className="text-xs text-muted-foreground">17+ ferramentas</span>
             </div>
             <div className="logo-marquee overflow-hidden" aria-label="Ferramentas inclusas no IA Pro Supreme">
               <div className="logo-marquee-track flex w-max gap-3 px-3">
@@ -578,7 +579,7 @@ function Index() {
                   <p className="mt-2 text-xs font-bold text-gold">{plan.savings}</p>
                 ) : null}
                 <ul className="mt-6 flex-1 space-y-3 text-sm text-muted-foreground">
-                  {["11+ ferramentas premium", "Liberação imediata", "Pix ou cartão"].map((item) => (
+                  {["17+ ferramentas premium", "Liberação imediata", "Pix ou cartão"].map((item) => (
                     <li key={item} className="flex justify-center gap-2 text-center">
                       <Check className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
                       {item}
@@ -709,6 +710,17 @@ function Index() {
           </div>
         </div>
       </section>
+
+      {/* Botão flutuante WhatsApp */}
+      <a
+        href="https://wa.me/5569993206337"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Falar no WhatsApp"
+        className="fixed right-4 bottom-4 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-110 sm:h-16 sm:w-16"
+      >
+        <SiWhatsapp className="h-8 w-8 sm:h-9 sm:w-9" />
+      </a>
 
       {/* Rodapé */}
       <footer className="border-t border-border py-10">
